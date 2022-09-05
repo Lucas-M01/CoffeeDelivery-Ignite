@@ -1,9 +1,13 @@
-import { HomeContainer } from "./styles";
+import { CoffeeList } from "./CoffeeList";
+import { HomeIntro } from "./Intro";
+import { Home } from "./styles";
 
-export function Home() {
+export function HomePage() {
     return (
-        <HomeContainer>
-            
-        </HomeContainer>
+        <Home>
+            <HomeIntro />
+
+            <CoffeeList />
+        </Home>
     )
 }

@@ -20,8 +20,8 @@ export const HeaderContainer = styled.header`
         }
 
         p {
-            color: ${(props) => props.theme['purple-dark']};
-            background-color: ${(props) => props.theme['purple-light']};
+            color: ${({theme}) => theme.colors['purple-dark']};
+            background-color: ${({theme}) => theme.colors['purple-light']};
             padding: 0.5rem;
             gap: 0.25rem;
             margin-right: 0.75rem;
@@ -30,19 +30,19 @@ export const HeaderContainer = styled.header`
 
         a {
             width: 3rem;
-            color: ${(props) => props.theme['yellow-dark']};
-            background-color: ${(props) => props.theme['yellow-light']};
+            color: ${({theme}) => theme.colors['yellow-dark']};
+            background-color: ${({theme}) => theme.colors['yellow-light']};
 
             span {
-                color: ${(props) => props.theme['white']};
-                background-color: ${(props) => props.theme['yellow-dark']};
+                color: ${({theme}) => theme.colors['white']};
+                background-color: ${({theme}) => theme.colors['yellow-dark']};
                 padding: 0.125rem 0.5rem;
                 border-radius: 1000px;
                 
                 position: absolute;
                 right: 150px;
                 top: 22px;
-                z-index: 1;
+                z-index: 5;
             }
         }
     }
