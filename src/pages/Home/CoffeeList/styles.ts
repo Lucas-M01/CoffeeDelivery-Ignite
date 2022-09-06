@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CoffeeListContainer = styled.section`
     margin-top: 2rem;
-    height: 102rem;
+    margin-bottom: 9.8rem;
 `
 
 export const CoffesList = styled.div`

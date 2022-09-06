@@ -90,6 +90,7 @@ export const AddCart = styled.div`
         border-radius: 6px;  
         margin-left: 0.25rem;
         transition: 0.4s;
+        cursor: pointer;
 
         &:hover {
             background: ${({theme}) => theme.colors["purple"]};

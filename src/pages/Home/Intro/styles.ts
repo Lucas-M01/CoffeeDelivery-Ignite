@@ -4,8 +4,8 @@ import { TitleText } from "../../../components/Typography";
 export const HomeContainer = styled.main`
     display: flex;
     justify-content: space-between;
-    margin-top: 94px;
     margin-bottom: 8.75rem;
+    margin-top: 5.4rem;
 `
 
 export const Intro = styled.div`

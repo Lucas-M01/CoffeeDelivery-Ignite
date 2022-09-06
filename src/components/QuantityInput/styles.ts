@@ -45,10 +45,12 @@ export const IconWrapper = styled.button.attrs({
     border: none;
     background: none;
     color: ${({theme}) => theme.colors["purple"]};
-    transition: 0.2s;
+    transition: 0.1s;
+    cursor: pointer;
 
     &:disabled {
         opacity: 0.4;
+        cursor: default;
     }
 
     &:hover {
