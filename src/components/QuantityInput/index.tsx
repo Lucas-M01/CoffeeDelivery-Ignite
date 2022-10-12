@@ -14,7 +14,7 @@ export function QuantityInput({ size = "medium", quantity, onIncrease, onDecreas
             <IconWrapper onClick={onDecrease} disabled={quantity <= 1}>
                 <Minus size={13} weight="fill" />
             </IconWrapper>
-            <input type="number" readOnly value={quantity} />
+            <span>{quantity}</span>
             <IconWrapper onClick={onIncrease}>
                 <Plus size={13} weight="fill" />
             </IconWrapper>

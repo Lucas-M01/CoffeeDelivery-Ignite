@@ -4,7 +4,7 @@ interface InputContainerProps {
     hasError: boolean;
 }
 
-export const InputContainer = styled.input`
+export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -46,7 +46,7 @@ export const InputStyled = styled.input`
     font-size: 0.75rem;
     color: ${({theme}) => theme.colors["base-text"]};
 
-    &&::placeholder {
+    &::placeholder {
         color: ${({theme}) => theme.colors["base-label"]};
     }
 `

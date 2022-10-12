@@ -76,7 +76,7 @@ export const CardFooter = styled.div`
 `
 
 export const AddCart = styled.div`
-    width: 7.5rem;
+    width: 8rem;
 
     > button {
         background: ${({theme}) => theme.colors["purple-dark"]};

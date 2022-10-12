@@ -29,34 +29,3 @@ export function HomeIntro() {
         </HomeContainer>
     )
 }
-
-/* <div> 
-<HomeContainer>
-<div>
-    <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-    <h6>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</h6>
-    <ItensContainer>
-        <div>
-            <ItemCard><ShoppingCart weight="fill" /></ItemCard> 
-            <p>Compra simples e segura</p>
-        </div>
-        <div>
-            <ItemPackage><Package weight="fill" /></ItemPackage> 
-            <p>Embalagem mantém o café intacto</p>
-        </div>
-        <div>
-            <ItemTimer><Timer weight="fill" /></ItemTimer> 
-            <p>Entrega rápida e rastreada</p>
-        </div>
-        <div>
-            <ItemCoffee><Coffee weight="fill" /></ItemCoffee> 
-            <p>O café chega fresquinho até você</p>
-        </div>
-    </ItensContainer>
-</div>
-<img src={imagemCoffeeHome} />
-</HomeContainer>
-<CoffeeList>
-<h2>Nossos cafés</h2>
-</CoffeeList>
-</div> */

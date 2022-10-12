@@ -8,15 +8,18 @@ export const QuantityInputContainer = styled.div<QuantityInputProps>`
     background: ${({theme}) => theme.colors["base-button"]};
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 4px;
     border-radius: 6px; 
-    flex: 1;
+    
 
-    input {
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        width: 100%;
-        background: none;
+        background: transparent;
+        width: 1.25rem;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
         border: none;
         color: ${({theme}) => theme.colors["base-title"]};
         
