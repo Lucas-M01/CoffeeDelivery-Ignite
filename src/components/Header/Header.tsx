@@ -9,20 +9,22 @@ export function Header() {
     const { cartQuantity } = useCart()
 
     return (
-        <HeaderContainer>
-            <NavLink to="/" title="home">
-                <img src={logoCoffeeDelivery} />
-            </NavLink>
-            <nav>
-                <p>
-                    <MapPin size={24} weight="fill" />
-                    Porto Alegre, RS
-                </p>
-                <NavLink to="/checkout" title="shopping card">
-                    {cartQuantity >= 1 && <span>{cartQuantity}</span>}
-                    <ShoppingCart size={24} weight="fill" />
+        
+            <HeaderContainer>
+                <NavLink to="/" title="home">
+                    <img src={logoCoffeeDelivery} />
                 </NavLink>
-            </nav>
-        </HeaderContainer>
+                <nav>
+                    <p>
+                        <MapPin size={24} weight="fill" />
+                        Porto Alegre, RS
+                    </p>
+                    <NavLink to="/checkout" title="shopping card">
+                        {cartQuantity >= 1 && <span>{cartQuantity}</span>}
+                        <ShoppingCart size={24} weight="fill" />
+                    </NavLink>
+                </nav>
+            </HeaderContainer>
+        
     )
 }

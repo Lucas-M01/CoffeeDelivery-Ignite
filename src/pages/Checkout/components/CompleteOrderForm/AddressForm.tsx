@@ -20,6 +20,7 @@ export function AddressForm() {
       <Input
         placeholder="CEP"
         type="number"
+        min={1}
         className="cep"
         {...register("cep")}
         error={errors.cep?.message}

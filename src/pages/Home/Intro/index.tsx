@@ -9,6 +9,7 @@ export function HomeIntro() {
     const { colors } = useTheme();
     return (
         <HomeContainer>
+                
             <Intro>
                 <div>
                     <IntroTitle size="xl">Encontre o café perfeito para qualquer hora do dia</IntroTitle>

@@ -1,4 +1,4 @@
-import { CompleteOrderContainer } from "./styles";
+import { CompleteOrderContainer, EmptyCartItems } from "./styles";
 import * as zod from "zod"
 import { FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -43,23 +43,33 @@ export function Checkout() {
     const { handleSubmit } = confirmOrderForm;
 
     const navigate = useNavigate();
-    const { cleanCart } = useCart();
+    const { cleanCart, cartItems } = useCart();
 
     function handleConfirmOrder(data: ConfirmOrderFormData) {
-        navigate("/orderConfirmed", {
+        navigate("/success", {
         state: data,
         });
         cleanCart();
     }
+
     return (
         <FormProvider {...confirmOrderForm}>
-            <CompleteOrderContainer
-                className="container"
-                onSubmit={handleSubmit(handleConfirmOrder)}
-            >
-                <CompleteOrderForm />
-                <SelectedCoffees />
-            </CompleteOrderContainer>
+            {cartItems.length >= 1 ? (
+                <CompleteOrderContainer
+                    className="container"
+                    onSubmit={handleSubmit(handleConfirmOrder)}
+                >
+                    <CompleteOrderForm />
+                    <SelectedCoffees />
+                </CompleteOrderContainer>
+            ) : (
+                <EmptyCartItems>
+                    <section>
+                        <h2>Não há itens no carrinho!</h2>
+                        <p>Selecione os itens na página inicial e finalize sua compra aqui</p>
+                    </section>
+                </EmptyCartItems>
+            )}
         </FormProvider>
     )
 }

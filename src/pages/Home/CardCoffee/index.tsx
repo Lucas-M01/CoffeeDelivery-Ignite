@@ -1,5 +1,6 @@
 import { ShoppingCart } from "phosphor-react";
-import { useContext, useState } from "react";
+import { toast } from 'react-toastify';
+import { useState } from "react";
 import { QuantityInput } from "../../../components/QuantityInput";
 import { RegularText, TitleText } from "../../../components/Typography";
 import { useCart } from "../../../hook/useCart";
@@ -44,6 +45,7 @@ export function CardCoffee({coffee}: CoffeeProps) {
             quantity
         }
 
+        toast.success("Foi adicionado ao carrinho")
         addCoffeeToCart(coffeeToAdd)
     }
 
