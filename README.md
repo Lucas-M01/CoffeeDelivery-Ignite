@@ -37,3 +37,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Styled Components](https://styled-components.com)
 - [Zod](https://zod.dev/)
 - [React Hook Form](https://react-hook-form.com/)
+
+## ⚙ Como executar
+
+Clone o repositório e acesse a pasta.
+
+```bash
+$ git clone https://github.com/Lucas-M01/CoffeeDelivery-Ignite
+```
+
+#### Inciar o Projeto:
+```bash
+# Instalar as dependências
+$ npm install
+
+# Iniciar o projeto
+$ npm run dev
+```
